@@ -1,8 +1,7 @@
 import plotly
 import plotly.graph_objs as go
 import json
-from app import mongoConn
-st_shp = mongoConn.db.st_shp
+from app.views import st_shp
 
 
 def create_plot(state):

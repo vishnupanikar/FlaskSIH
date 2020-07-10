@@ -1,10 +1,10 @@
-from app import server, mongoConn
+from app import server
 from flask import render_template, flash, redirect, url_for, request
 from app.forms import LoginForm, Register
 from werkzeug.security import generate_password_hash, check_password_hash
 from app.myplot import create_plot
+from app.views import Users
 
-Users = mongoConn.db.users
 
 @server.route('/')
 @server.route('/index')
